@@ -1,0 +1,38 @@
+HISTORY OF HTML => Early Beginnings (1980's) The concept of hypertext was proposed by computer scientist Ted Nelson in the 1960s. In the 1980s,Berners-lee, a British computer scientist introduced the world wide web (www) and developed the first HTML.
+
+-------------------
+
+Que 1 :- What is HTML ?
+HTML stands for Hyper Text Markup Language 
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content.
+
+-------------------
+
+Que 2 :- What is HyperText ?
+HyperText is Text which contains links to other texts.The term was coined by Ted Nelson around 1965.
+HyperText is the method by which Internet users navigate the web. By clicking on special text called hyperlinks, users are brought to new pages. The use of hyper means it is not linear, so users can go anywhere on the Internet simply by clicking on the available links. It refert to a word or phrase that can be linked to another document ot text. hypertext involves only text. 
+
+-------------------
+
+Que 3 :-What is hypermedia ?
+HyperMedia is a term used for hypertext which is not constrained to be text. It can include graphics, video and sound , for example. Apparently Ted Nelson was the first to use this term too.
+Hypermedia is an extension to what is known as hypertext, or the ability to open new Web pages by clicking text links on a Web browser. Hypermedia extends upon this by allowing the user to click images, movies, graphics and other media apart from text to create a nonlinear network of information.
+
+------------------- 
+
+Que 4 :- What is hyperlinks ?
+In a website hyperlinks or link is like a word or a button that point to another location. To navigate online content, Hyperlink can point to the web content with its part of the website or external website. Hyperlink contain url of the webpage.
+A link on which hypertext is connected, means when we click on the hypertext and it goes on speficif url that is called "Hyperlink".
+
+-------------------
+
+Que 5 :-  What is Markup language ?
+Markup language it's a way to give instructions to a computer about how content should be organized and displayed.
+A computer language that consists of easily understood keywords, names, or tags that help format the overall view of a page and the data it contains. Some examples of a markup language are BBC, HTML, SGML (standard generalized markup language), and XML (extensible markup language).
+
+-------------------
+
+Que 6:- 
