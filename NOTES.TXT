@@ -34,5 +34,3 @@ Markup language it's a way to give instructions to a computer about how content 
 A computer language that consists of easily understood keywords, names, or tags that help format the overall view of a page and the data it contains. Some examples of a markup language are BBC, HTML, SGML (standard generalized markup language), and XML (extensible markup language).
 
 -------------------
-
-Que 6:- 
