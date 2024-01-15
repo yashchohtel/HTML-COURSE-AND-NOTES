@@ -34,3 +34,53 @@ Markup language it's a way to give instructions to a computer about how content 
 A computer language that consists of easily understood keywords, names, or tags that help format the overall view of a page and the data it contains. Some examples of a markup language are BBC, HTML, SGML (standard generalized markup language), and XML (extensible markup language).
 
 -------------------
+
+Que 6 :- what is html syntax?
+<h1> THIS IS H1 TAG </h1>
+here <h1> is opening tag || THIS IS H1 TAG is cntent || </h1> is closeing tag -> the conbination of opening tag closeing tag and content is syntax in html.
+
+-------------------
+
+Que 7 :- what is difference between tag and syntax?
+HTML Tags and Elements are sometimes perceived as the same. However, they are not. There is a subtle difference between HTML elements and tags that many people aren't aware of.
+
+HTML Tags are building blocks of HTML Page. They tell the browser how it should display content to the user. A tag starts with a < bracket and ends with a > bracket. Most tags exist in pairs in HTML. Tags have an opening and closing part. They are similar, except the closing part has a / sign after the opening bracket.
+
+Opening tag: <TagName>
+Closing tag: </TagName>
+
+HTML Element includes a start tag, content, and an end tag. HTML Elements are components of the web page. Let's say we created a div block and filled it with some text. Then the text-filled div becomes the component of the HTML Page. The <div></div> tags along with the content inside it becomes a component and HTML Element. This will be rendered and shown to the user.
+
+<p>This is an element<p>
+
+An HTML element consists of a start tag, some content, and an end tag.
+
+-------------------
+
+Que 8 :- What is the index in html?
+index.html is an HTML file that serves as the home page for a website. It's often the first file that visitors to a website will see.
+
+-------------------
+
+Que 9 :- Document structure in HTML or boilerplate code. ( https://web.dev/learn/html/document-structure )
+
+HTML documents include a document type declaration { <!DOCTYPE html> } and the { <html> </html> } root element. Nested in the <html> element are the document head {  <head></head> } and document body { <body></body> } . While the head of the document isn't visible to the sighted visitor, it is vital to make your site function. It contains all the meta information, including information for search engines and social media results, icons for the browser tab and mobile home screen shortcut, and the behavior and presentation of your content. In this section, you'll discover the components that, while not visible, are present on almost every web page.
+
+
+<!DOCTYPE html>
+The first thing in any HTML document is the preamble. For HTML, all you need is <!DOCTYPE html>. This may look like an HTML element, but it isn't. It's a special kind of node called "doctype". The doctype tells the browser to use standards mode. If omitted, browsers will use a different rendering mode known as quirks mode. Including the doctype helps prevent quirks mode.
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------
+
+Que 8 :-
