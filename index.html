@@ -16,16 +16,28 @@
 <body>
     <!-- The <body> tag defines the document's body. The <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. Note: There can only be one <body> element in an HTML document. -->
 
+    <!-- No matter how much you whitespace you use inside HTML element content (which can include one or more space characters, but also line breaks), The HTML parser reduces each sequence of whitespace to a single space when rendering the code. -->
 
-    <!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+    <!-- HTML Comment Tag
+    The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers. You can
+    use comments to explain your code, which can help you when you edit the source code at a later date. This is
+    especially useful if you have a lot of code. -->
 
-    <!-- HEADING TAGS (h1,h2,h3,h4,h,h6) -->
 
-    <!-- HTML headings are titles or subtitles that you want to display on a webpage.
-    There are six heading tag h1,h2,h3,h4,h,h6.  <h1> tag is typically, larger and bold in apperence, around 24px to 36px or even larger. and further thicknes and boldness of heading tag decrease as we go down to h2,h3,h4,h,h6,
-    HTML headings are defined with the <h1> to <h6> tags.
-    <h1> defines the most important heading. <h6> defines the least important heading.
-    -->
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [1] HR AND BR <hr> <br> -->
+    <h1>[1] HR AND BR</h1>
+    <hr><br>
+
+    <!--? <hr> and <br> tags are used in HTML to create a horizontal line and a single line break, respectively. The <hr> tag creates a line across the page and has no closing tag. The <br> tag creates a line break within a block of text, so the text will start on a new line. -->
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [2] HEADING TAGS (h1,h2,h3,h4,h,h6) -->
+    <H1>[2] HEADING TAGS</H1>
+
+    <!--? HTML headings are titles or subtitles that you want to display on a webpage. There are six heading tag h1,h2,h3,h4,h,h6.  <h1> tag is typically, larger and bold in apperence, around 24px to 36px or even larger. and further thicknes and boldness of heading tag decrease as we go down to h2,h3,h4,h,h6, HTML headings are defined with the <h1> to <h6> tags. <h1> defines the most important heading. <h6> defines the least important heading. -->
 
     <h1>THIS IS H1 HEADING TAG</h1>
     <h2>THIS IS H1 HEADING TAG</h2>
@@ -33,20 +45,110 @@
     <h4>THIS IS H1 HEADING TAG</h4>
     <h5>THIS IS H1 HEADING TAG</h5>
     <h6>THIS IS H1 HEADING TAG</h6>
+    <hr>
 
-    <!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [3] PARAGRAPH TAG <p></p> -->
+    <H1>[3] PARAGRAPH TAG</H1>
+
+    <!--? The <p> tag defines a paragraph. Browsers automatically add a single blank line before and after each <p> element. -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis debitis non possimus id quam adipisci, sequi
+        ullam quis. Saepe quis unde natus dignissimos nostrum illum doloribus hic eligendi laudantium. Nisi molestiae
+        non dolore cupiditate aliquam magni perferendis earum, natus ex, ea dignissimos mollitia laudantium atque quo,
+        at modi in necessitatibus!</p>
+    <hr>
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [4] HTML TEXT FORMATTING -->
+    <h1>[4] HTML TEXT FORMATTING</h1>
+
+    <!--? Text formatting in HTML refers to the way text is displayed on a web page. It is the process of applying various styles, colors, fonts, sizes, and other visual enhancements to text content within an HTML document. HTML offers a range of tags that can be used to format text, including: Bold text: <b> or <strong></strong> -->
+
+    <!--? (I) Bold text: <b> or <strong>
+    HTML <b> tag is used to display the written text in bold format. It is strictly a presentational element. If you want to show your text in bold letters and not have real semantic meaning, then put it within <b>....... </b> tag. 
+
+    The <strong> tag is used to define text with strong importance. The content inside is typically displayed in bold. Tip: Use the <b> tag to specify bold text without any extra importance! -->
+    <p>Lorem <b>ipsum</b> dolor sit amet <strong>consectetur</strong>, adipisicing elit. Aperiam, repellat.</p>
 
 
+    <!--? (II) Italicized text: <i> or <em>
+    The content inside is typically displayed in italic. The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+
+    The <em> tag is used to define emphasized text. The content inside is typically displayed in italic. A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.-->
+    <p>Lorem <i>ipsum</i> dolor sit amet <em>consectetur</em>, adipisicing elit. Aperiam, repellat.</p>
 
 
-    <h1></h1>
+    <!--? (III) Underlined text: <u></u> 
+    The <u> tag represents some text that is unarticulated and styled differently from normal text, such as misspelled words or proper names in Chinese text. The content inside is typically displayed with an underline. -->
+    <p>Lorem ipsum dolor sit, amet <u>consectetur</u> adipisicing elit. Sit, ad.</p>
 
+    <!--? (IV) Strike-through text: <del> or <s> 
+    The <s> HTML element renders text with a strikethrough, or a line through it. Use the <s> element to represent things that are no longer relevant or no longer accurate.
 
+    The <del> tag defines text that has been deleted from a document. Browsers will usually strike a line through deleted text.-->
+    <p>Lorem <s>ipsum</s> dolor sit amet <del>consectetur</del>, adipisicing elit. Aperiam, repellat.</p>
 
+    <!--? (V) Superscript and subscript text: <sup> or <sub>
+    The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. 
 
+    The <sup> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. -->
+    <p>x<sup>2</sup> + y<sub>nd</sub></p>
 
+    <!--? (VI) Preformatted text <pre></pre>
+    The <pre> tag defines preformatted text. Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code. Also look at: Tag.-->
+    <pre>
+        To
+        The principal
+        XYZ School
+        
+        Date : 23 Aug. 2023
+        
+        Subject : Leave Application for two Days.
+        
+        Respected sir/madam
+        
+        With due Respect, I beg to say that I am a student of class 10th in your school. I am not feeling well today and also have some weakness. Hence I request you to please grant me two days leave.
+        
+        I hope you will consider my application. I will definitely try to remain present after 2 days.
+        
+        Thanking you.
+        
+        Yours obediently
+        Name : XYZ
+        Class : 10th
+    </pre>
 
+    <!--? (VII) KEYBOARD <kbd></kbd> 
+    The <kbd> tag is used to define keyboard input. The content inside is displayed in the browser's default monospace font. Tip: This tag is not deprecated.
+    -->
+    <p>To save file press <kbd>Ctrl+s</kbd></p>
 
+    <!--? (VIII) Abbribiaiton <abbr></abbr> 
+    <abbr> can also be used with <dfn> to define an abbreviation: <p><dfn><abbr title="Cascading Style Sheets">CSS</abbr> </dfn> is a language that describes the style of an HTML document.</ p>-->
+    <p><abbr title="Cascading Style Sheets">CSS</abbr> is a language that describes the style of an HTML document. </p>
+
+    <!--? (IX) Mark <mark></mark> 
+    What is a tag mark? <mark> HTML Tag The <mark> element is used to highlight text inside of another element such as a paragraph, list, or table.
+    -->
+    <p>This is example of <mark>mark</mark> tag</p>
+
+    <!--? (IX) Small <small></small> 
+    The <small> tag in HTML is used to define smaller text, reducing font size. It decreases the font size by one size (from medium to small, from x-large to large)
+    -->
+    <p>This is <small>small</small> tag</p>  <hr>
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [5] ANCHOR TAG -->
+    <h1>[4] ANCHOR TAG</h1>
+
+    <!--? Anchor tags in HTML code are HTML elements used to create hyperlinks in webpages. They allow you to link to another webpage, a specific section of a page, an email address, a file, or any other URL. They are also known as anchor elements or <a> tags. Anchor tag has "href" attribute which means (Hypertext REFerece) it contains the url. -->
+    
+    
+    <a href="https://google.com">GOOGLE</a>
 
 
 
@@ -84,5 +186,5 @@
 
 
 
-<!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
-<!-- -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+<!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+<!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->

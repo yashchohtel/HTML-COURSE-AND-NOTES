@@ -104,8 +104,35 @@ There are six heading tag h1,h2,h3,h4,h,h6.  <h1> tag is typically, larger and b
 HTML headings are defined with the <h1> to <h6> tags.
 <h1> defines the most important heading. <h6> defines the least important heading.
 
+-------------------------------------------------
 
+Que 12 :- What is paragraph or <p></p> tag in HTML?
+The <p> tag defines a paragraph.
+Browsers automatically add a single blank line before and after each <p> element.
 
+-------------------------------------------------
+
+Que 13 :- What is  <hr> and  <br> tag ?
+<hr> and <br> tags are used in HTML to create a horizontal line and a single line break, respectively. The <hr> tag creates a line across the page and has no closing tag. The <br> tag creates a line break within a block of text, so the text will start on a new line.
+
+-------------------------------------------------
+
+Que 14  :- What is void element in HTML?
+A void element is an element whose content model never allows it to have contents under any circumstances. Void elements can have attributes. The following is a complete list of the void elements in HTML : area , base , br , col , command , embed , hr , img , input , keygen , link , meta , param , source , track , wbr.
+
+-------------------------------------------------
+
+Que 15 :- What is HTML Comment Tag <!--...--> ?
+The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers. You can use comments to explain your code, which can help you when you edit the source code at a later date. This is especially useful if you have a lot of code.
+
+-------------------------------------------------
+
+Que 16 :- What is text formatting in html? (https://www.almabetter.com/bytes/tutorials/html/text-formatting-tags-in-html5)
+Text formatting in HTML refers to the way text is displayed on a web page. It is the process of applying various styles, colors, fonts, sizes, and other visual enhancements to text content within an HTML document. HTML offers a range of tags that can be used to format text, including: Bold text: <b> or <strong>
+
+-------------------------------------------------
+
+Que 17 :- What is anchor tag in HTML?
 
 
 
