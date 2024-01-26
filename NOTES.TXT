@@ -122,7 +122,7 @@ A void element is an element whose content model never allows it to have content
 
 -------------------------------------------------
 
-Que 15 :- What is HTML Comment Tag <!--...--> ?
+Que 15 :- What is HTML Comment Tag .. ?
 The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers. You can use comments to explain your code, which can help you when you edit the source code at a later date. This is especially useful if you have a lot of code.
 
 -------------------------------------------------
@@ -133,7 +133,7 @@ Text formatting in HTML refers to the way text is displayed on a web page. It is
 -------------------------------------------------
 
 Que 17 :- What is anchor tag in HTML?
-<!--? Anchor tags in HTML code are HTML elements used to create hyperlinks in webpages. They allow you to link to another webpage, a specific section of a page, an email address, a file, or any other URL. They are also known as anchor elements or <a> tags. Anchor tag has "href" attribute which means (Hypertext REFerece) it contains the url.
+ Anchor tags in HTML code are HTML elements used to create hyperlinks in webpages. They allow you to link to another webpage, a specific section of a page, an email address, a file, or any other URL. They are also known as anchor elements or <a> tags. Anchor tag has "href" attribute which means (Hypertext REFerece) it contains the url.
 
 -------------------------------------------------
 
@@ -251,13 +251,86 @@ The <dl> HTML element represents a description list. The element encloses a list
 Que 20 :- What is html tables?
 The <table> tag defines an HTML table. An HTML table consists of one <table> element and one or more <tr>, <th>, and <td> elements. The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell.
 
+Lists of depricated attributes
+<table align="...">: Used to horizontally align the table within its containing element.
+<tr align="...">: Used to horizontally align the content of a table row.
+<td align="...">: Used to horizontally align the content of a table cell.
+<th align="...">: Used to horizontally align the content of a table header cell.
+<bgcolor="...">: Used to set the background color of a table, row, or cell.
+<border="...">: Used to define the border width of a table.
+<frame="...">: Used to specify whether a table should have outer frames.
+<rules="...">: Used to define the presence and types of horizontal and vertical rules within a table.
+<width="...">: Used to set the width of a table, row, or cell. 
+cellspacing & cellpadding for the cell padding and outer spacing
 
+-------------------------------------------------
 
+Que 21 :- What is Iframe tag?
+An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content.
 
+-------------------------------------------------
 
+Que 22 :- What is audio and video tag?
 
+Audio (<audio>): The audio element is used to embed audio content in a webpage. It supports various audio formats and provides controls for playback. The <audio> tag is used to embed sound content in a document, such as music or other audio streams. The <audio> tag contains one or more <source> tags with different audio sources. The browser will choose the first source it supports.
 
+controls: Adds playback controls (play, pause, volume, etc.).
+autoplay: Starts playback automatically. loop: Repeats the media indefinitely.
+preload: Specifies if the media should be loaded when the page loads. poster:
+Displays an image before the media loads. 
 
+<audio controls loop>
+    <source src="/resources/audio/Rolex bgm.mp3">
+</audio>
+
+vidio <video>: This HTML element embeds a media player which supports video playback into the document.
+
+-------------------------------------------------
+
+Que 23 :- What is HMTL formes?
+The <form> tag is used to create an HTML form for user input.
+The <input> HTML element is used to create interactive controls for web-based forms to accept data from the user. We must write inside the tag.
+
+-------------------------------------------------
+
+Que 24 :- What is html sementic element?
+Html Semantic Elements => A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content. ||  Many websites contain HTML code like: <div id="nav"></div>, <div class="header"></div>, <div class="footer"></div> to indicate navigation, header, and footer. || in HTML there are some semantic elements that can be used to define different arts of a web page: ex <header></header>, <nav></nav>, <footer></footer>
+
+-------------------------------------------------
+
+Que 25 :- What is meta tag?
+The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+<meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+Metadata will not be displayed on the page, but is machine parsable.
+Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+There is a method to let web design
+
+The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+<meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the    document, and viewport settings.
+Metadata will not be displayed on the page, but is machine parsable.
+Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+There is a method to let web design 
+
+Specifies the character encoding for the webpage, ensuring proper rendering of characters. 
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+This gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the pag tofollow the screen-width of the device (which will vary depending on the device). The initial-scale=1.0 part sets the initial zoom level whe thepage is first loaded by the browser. 
+    
+Define keywords for search engines: 
+<meta name="keywords" content="HTML, Hypertext markup language">
+    
+Define a description of your web page: 
+<meta name="description" content="Html notes and course">
+    
+Define the author of a page: 
+<meta name="author" content="John Doe">
+    
+Refresh document every 30 seconds: 
+<meta http-equiv="refresh" content="30">
+
+<title>HTML AND COURSE AND NOTES</title>
+The title tag is an HTML code tag that allows you to give a web page a title. This title can be found in the browser title bar, as well as in the search engine results pages (SERP). It's crucial to add and optimise your website's title tags, as they play an essential role in terms of organic ranking (SEO).
 
 
 

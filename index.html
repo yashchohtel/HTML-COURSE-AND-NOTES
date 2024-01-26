@@ -7,9 +7,34 @@
 <head>
     <!-- The <head>, or document metadata header, contains all the metadata for a site or application. The body contains the visible content. The rest of this section focuses on the components found nested inside the opening and closing <head></head> -->
 
+
+    <!--? The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+    <meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the     document, and viewport settings.
+    Metadata will not be displayed on the page, but is machine parsable.
+    Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+    There is a method to let web design -->
+
+    <!-- Specifies the character encoding for the webpage, ensuring proper rendering of characters. -->
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--? This gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+
+    
+    <!-- Define keywords for search engines: -->
+    <meta name="keywords" content="HTML, Hypertext markup language">
+    
+    <!-- Define a description of your web page: -->
+    <meta name="description" content="Html notes and course">
+    
+    <!-- Define the author of a page: -->
+    <meta name="author" content="John Doe">
+    
+    <!-- Refresh document every 30 seconds: -->
+    <meta http-equiv="refresh" content="30">
+
     <title>HTML AND COURSE AND NOTES</title>
+    <!--? The title tag is an HTML code tag that allows you to give a web page a title. This title can be found in the browser title bar, as well as in the search engine results pages (SERP). It's crucial to add and optimise your website's title tags, as they play an essential role in terms of organic ranking (SEO).0 -->
 
 </head>
 
@@ -139,10 +164,10 @@
     The <small> tag in HTML is used to define smaller text, reducing font size. It decreases the font size by one size (from medium to small, from x-large to large)
     -->
     <p>This is <small>small</small> tag</p>
-    
+
     <!--? (X) By Direction tag <bdo dir=""></bdo> 
         <bdo dir=""></bdo> this is bdo (by direction) tag used to define the direction of text and it has dir attribute in which we write direction-->
-        <p>bdo tag</p>
+    <p>bdo tag</p>
     <bdo dir="ltr">this text is left to right</bdo>
     <br>
     <bdo dir="rtl">this text is right to left</bdo>
@@ -304,7 +329,8 @@
 
         <dt>Owlman</dt>
         <dd>A giant owl-like creature.</dd>
-    </dl>
+    </dl> <br>
+    <hr>
 
 
     <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
@@ -323,70 +349,363 @@
 
 
 
-    <table>
+    <table border="1" cellpadding="10" style="text-align: center;">
+
+        <thead>
+            <tr>
+                <td colspan="8">TIMETABLE</td>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td rowspan="7">HOUR</td>
+                <td>MONDAY</td>
+                <td>TUESDAY</td>
+                <td>WEDNEDSAY</td>
+                <td>THRUSDAY</td>
+                <td>FRIDAY</td>
+                <td>SATURDAY</td>
+                <td>SUNDAY</td>
+            </tr>
+
+            <tr>
+                <td>MATHS</td>
+                <td>MATHS</td>
+                <td>MATHS</td>
+                <td>MATHS</td>
+                <td>MATHS</td>
+                <td>MATHS</td>
+                <td>MATHS</td>
+            </tr>
+
+            <tr>
+                <td>SCIENCE</td>
+                <td>SCIENCE</td>
+                <td>SCIENCE</td>
+                <td>SCIENCE</td>
+                <td>SCIENCE</td>
+                <td>SCIENCE</td>
+                <td>SCIENCE</td>
+            </tr>
+
+            <tr>
+                <td>ENGLISH</td>
+                <td>ENGLISH</td>
+                <td>ENGLISH</td>
+                <td>ENGLISH</td>
+                <td>ENGLISH</td>
+                <td>ENGLISH</td>
+                <td>ENGLISH</td>
+            </tr>
+
+            <tr>
+                <td colspan="7">LUNCH</td>
+            </tr>
+
+            <tr>
+                <td>HINDI</td>
+                <td>HINDI</td>
+                <td>HINDI</td>
+                <td>HINDI</td>
+                <td>HINDI</td>
+                <td>HINDI</td>
+                <td>HINDI</td>
+            </tr>
+
+            <tr>
+                <td>SANSKRIT</td>
+                <td>SANSKRIT</td>
+                <td>SANSKRIT</td>
+                <td>SANSKRIT</td>
+                <td>SANSKRIT</td>
+                <td>SANSKRIT</td>
+                <td>SANSKRIT</td>
+            </tr>
+
+        </tbody>
 
     </table>
+    <hr> <br>
+
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [10] IFRAME -->
+    <h1>[10] IFRAME </h1>
+
+    <!--? An inline frame (iframe) is a HTML element that loads another HTML page within the document. It essentially puts another webpage within the parent page. They are commonly used for advertisements, embedded videos, web analytics and interactive content. We cannot embedd website every website in ourpages -->
+
+    <p>Empeding a wikipedia website in this page</p>
+    <iframe src="https://www.wikipedia.org" frameborder="0" width="600px" height="300px"
+        style="border: 1px solid black;"></iframe>
+
+    <p>embedding youtube video</p>
+    <iframe width="600px" height="300px" src="https://www.youtube.com/embed/mb5QGzNlZoY?si=5yLGWJZMDHsk2LsV"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <p>embedding a map</p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28491.82281471925!2d82.17878733324702!3d26.7929092686325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a0792bc55a0d5%3A0x46c4d8c08f3a9a55!2sRam%20Sabha%20Mandir%2C%20Ayodhya!5e0!3m2!1sen!2sin!4v1706291033027!5m2!1sen!2sin"
+        width="600px" height="300px" style="border:1px solid black;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <hr> <br>
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [11] AUDIO AND VIDEO TAG -->
+    <h1>[11] AUDIO AND VIDEO TAG </h1>
+
+    <!-- Audio (<audio>): The audio element is used to embed audio content in a webpage. It supports various audio formats and provides controls for playback. The <audio> tag is used to embed sound content in a document, such as music or other audio streams. The <audio> tag contains one or more <source> tags with different audio sources. The browser will choose the first source it supports. -->
+
+    <!--* audio tag attribute
+   controls: Adds playback controls (play, pause, volume, etc.).
+   autoplay: Starts playback automatically. loop: Repeats the media indefinitely.
+   preload: Specifies if the media should be loaded when the page loads. poster:
+   Displays an image before the media loads. -->
+
+    <p>html audio tag</p>
+    <audio controls loop>
+        <source src="/resources/audio/Rolex bgm.mp3">
+    </audio>
+
+    <!-- vidio <video>: This HTML element embeds a media player which supports video playback into the document. -->
+    <p>html video tag</p>
+    <video controls loop muted width="200px" poster="/resources/img/peakpx.jpg">
+        <source src="/resources/video/video.mp4">
+    </video>
+    <hr> <br>
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [12] HTML FORMES -->
+    <h1>[12] HTML FORMS </h1>
+
+    <!--? The <form> tag is used to create an HTML form for user input. -->
+
+    <!--? The <input> HTML element is used to create interactive controls for web-based forms to accept data from the user. We must write inside the tag. -->
+
+    <!--* HTML Types of inputs in HTML Form -->
+
+    <form action="#">
+        <!--? An HTML form is used to collect user input. The user input is most often sent to a server for processing. this is form tag to define the forms -->
+
+        <!-- INPUT - this is input which is used to get data form the user it has very wide type of input. -->
+        <!-- The label element defines a label for several form element. the <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user  -->
+
+        <!--* 1. INPUTS TAG AND ITS ATTRIBUTES-->
+
+
+        <!-- type-text is simply for textinput -->
+        <label for="first-name">first name: </label>
+        <input type="text" id="username"> <br><br>
+
+        <!-- The input value attribute spefifies an initial value for an input fields -->
+        <label for="first-name">first name: </label>
+        <input type="text" id="username" value="yash"> <br><br>
+
+        <!-- The readonly attribute spefifies that an input fields is read-only -->
+        <label for="first-name">first name: </label>
+        <input type="text" id="username" readonly value="this is readonly"> <br><br>
+
+        <!-- the input disable attribute spefifies that an input fiels should be disabled. -->
+        <label for="first-name">first name: </label>
+        <input type="text" id="username" disabled> <br><br>
+
+        <!-- the input size attibute spefifies the visible width, in characters, of an input field default size is 20 -->
+        <label for="first-name">first name: </label>
+        <input type="text" id="username" size="20"> <br><br>
+
+        <!-- The input maxlength attribute speiffies the maximum number of characters allowed in an input fiels. -->
+        <label for="first-name">first name: </label>
+        <input type="text" id="username" maxlength="10" minlength="5"> <br><br>
+
+        <!-- The input min and max attributes spefify the minimum and maximum values for an input field. -->
+        <label for="first-name">date: </label>
+        <input type="date" id="datemax" name="datemax" min="2000-01-01" max="2022-01-01"> <br><br>
+
+        <!-- Min Max for number fields -->
+        <label for="first-name">phone no: </label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+
+        <!-- The input multiple attribute spefifies that the user is allowed to enter more than one value in an input fields. -->
+        <label for="first-name">chose file: </label>
+        <input type="file" id="files" name="files" multiple><br><br>
+
+        <!-- The input placeholder attribute spefifies a short hint that describes the expexted value of an input fields (a sample value or a short descripion of the expected format) -->
+        <label for="username">username</label>
+        <input type="text" id="username" placeholder="enter your name"> <br><br>
+
+        <!-- The input required attribute spefifies that an input fiels must be filled out before submmitting the form -->
+        <label for="first-name">first name: </label>
+        <input type="text" id="username" required> <br><br>
+
+        <!-- The autofocus attrivute spefifies that an input fiels should automatically get focous when the page loads. -->
+        <label for="first-name">first name: </label>
+        <input type="text" autofocus> <br><br>
+
+        <!-- The input autocomplete attribute speifies whenter a form or an input field should have autoomplete off or on. -->
+        <label for="first-name">first name: </label>
+        <input type="text" id="fname" name="fname" autocomplete="on"><br><br>
+
+        <!-- The input list attrivute refers to a <datlist> element that contains pre-defined options for an <input> element -->
+        <label for="first-name">select browser: </label>
+        <select id="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome" selected>Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="safari">safari</option>
+        </select> <br><br>
+
+        <!--* TYPES OF TYPE ATTRIBUTE OF INPUT TAG -->
+
+        <label for="first-name">first name: </label>
+        <input type="text"> <br><br>
+        <!-- type text is used to simply get the user text data -->
+
+        <label for="first-name">password: </label>
+        <input type="password" name="" id=""><br><br>
+        <!-- type password used to define it is a password input field -->
+
+        <label for="first-name">email</label>
+        <input type="email" name="" id=""><br><br>
+        <!--type email used to define it is a email input field-->
+
+        <label for="first-name">phone no:</label>
+        <input type="number" name="" id=""><br><br>
+        <!--type number used to define it is a number input field-->
+
+        <label for="">chose color:</label>
+        <input type="color" name="" id=""><br><br>
+        <!--type color used to define it is a color input field-->
+
+        <label for="">select date:</label>
+        <input type="date" name="" id=""><br><br>
+        <!--type date used to define it is a date input field-->
+
+        <label for="">enter time:</label>
+        <input type="datetime-local" min="2020-01-01" max="2022-12-31" value="2020-04-12T16:00"><br> <br>
+        <!-- type datetime-local is used get the date and time -->
+
+        <label for="">select month:</label>
+        <input type="month"> <br> <br>
+        <!--this is used to enter month and year-->
+
+        <label for="">select range:</label>
+        <input type="range" min="0" max="100" step="10"> <br> <br>
+        <!--this is used to make meter-->
+
+        <label for="">enter value:</label>
+        <input type="number" min="0" max="100" step="10"> <br> <br>
+        <!--it will increase number step by step by 10 -->
+
+        <label for="">search here:</label>
+        <input type="search"><br> <br>
+        <!--it is used to make search box -->
+
+        <label for="">enter url here:</label>
+        <input type="url"><br> <br>
+        <!--it is used to make search box -->
+
+        <label for="">select week:</label>
+        <input type="week"><br> <br>
+        <!--it is used take week as input-->
+
+        <label for="">message here:</label>
+        <textarea name="textarea" id="" cols="20" rows="10"></textarea>
+        <!-- this is text area it is used to take a large input as a data we can write in multiple lines  --> <br> <br>
+
+        <label for="">select:</label>
+        <input type="checkbox" name="blue" value="blue1"> blue
+        <input type="checkbox" name="green" value="blue1"> green
+        <input type="checkbox" name="red" value="red1"> red <br> <br>
+        <!-- this is input type checkbox use to get data in a selection/check format -->
+
+        <label for="">gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female <br> <br>
+        <!-- this is radio  similar to checkbox but we can only select one in radio type -->
+
+        <label for="">select one number:</label>
+        <select name="number">
+            <option value="1">1</option>
+            <option value="2" selected>2</option> <!-- selected attribute used selete the option by default -->
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select> <br> <br>
+        <!-- it is select tag used to get data in selection form we have to select from some options -->
+
+        <label for="">field set:</label>
+        <fieldset>
+            <legend>Portfolio:</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" value="John" placeholder="enter your name"><br> <br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" value="the don" placeholder="enter your last name"><br> <br>
+
+        </fieldset>
+
+        <label for="">reset:</label>
+        <input type="reset" name="reset" value="reset all data">
+        <!-- this is reset it is used to reset the flled form --> <br> <br>
+
+        <input type="button" name="button" value="submit">
+        <!-- this input field button used as a button --> <br> <br>
+    </form>
+    <hr> <br>
 
 
 
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [13] SEMENTIC ELEMENTS -->
+    <h1>[13] SEMENTIC ELEMENTS</h1>
+
+    <!--? Html Semantic Elements => A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content. ||  Many websites contain HTML code like: <div id="nav"></div>, <div class="header"></div>, <div class="footer"></div> to indicate navigation, header, and footer. || in HTML there are some semantic elements that can be used to define different arts of a web page: ex <header></header>, <nav></nav>, <footer></footer> -->
 
 
+    <header>
+        <p>HEADER</p>
+        <nav>NAVIGATION</nav>
+    </header>
 
+    <main>
+        <section>
+            <p>MY HERO SECTION</p>
+        </section>
+    </main>
 
+    <article>
+        <h1>HEADING OF A ARTICLE</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem corrupti molestias hic? Quisquam
+            laudantium natus repellendus aut. Quasi quod eaque rerum? Nihil, iusto molestias est quae saepe sequi
+            adipisci vitae voluptatum ipsam dignissimos mollitia, quod delectus beatae expedita ipsum libero.</P>
+    </article>
 
+    <section>
 
+        <ul>CARS
+            <li>car1</li>
+            <li>car2</li>
+            <li>car3</li>
+            <li>car4</li>
+        </ul>
 
+        <aside>
+            <p>this is aside section</p>
+        </aside>
 
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <BR><BR><BR></BR></BR></BR>
+    <footer>
+        <p>FOOTER</p>
+    </footer>
 
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
-<!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
-
-
-
-
