@@ -133,6 +133,136 @@ Text formatting in HTML refers to the way text is displayed on a web page. It is
 -------------------------------------------------
 
 Que 17 :- What is anchor tag in HTML?
+<!--? Anchor tags in HTML code are HTML elements used to create hyperlinks in webpages. They allow you to link to another webpage, a specific section of a page, an email address, a file, or any other URL. They are also known as anchor elements or <a> tags. Anchor tag has "href" attribute which means (Hypertext REFerece) it contains the url.
+
+-------------------------------------------------
+
+Que 18 :- What is html entity?
+Some characters are reserved in HTML. If you use the less than (<) or greater than (>) signs in your HTML text, the browser might mix them with tags. Entity names or entity numbers can be used to display reserved HTML characters.
+HTML entities are codes used to represent special characters and symbols that have reserved meanings in HTML. These entities are especially important when you  want to display characters that might conflict with HTML syntax or when you want to display characters that aren't directly available on your keyboard. HTML entities are represented using an ampersand (&) followed by a code and a semicolon (;).
+
+
+-------------------------------------------------
+
+Que 18 :- What is img or image tag in html?
+The <img> tag is used to embed an image in an HTML page. Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+src - Specifies the path to the image. alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed.
+<img src="link or image" alt="alternae text" >
+
+Image tag attributes 
+
+a. src: -> Specifies the path to the image 
+b. atl: -> Specifies an alternate text for the image, if the image for some reason cannot be displayed 
+c. height and width: -> The height and width can be set in terms of pixels. The <img> height attribute is used to set the height of the image in pixels. The <img> width attribute is used to set the width of the image in pixels 
+d. loading: -> The loading attribute specifies whether a browser should load an image immediately or to defer loading of off-screen images until for example the user scrolls near them.
+
+Image tag map attribute
+The <map> tag is used to define an image map. An image map is an image with clickable areas. The required name attribute of the <map> element is associated with the <img>'s usemap attribute and creates a relationship between the image and the map.
+
+The <area> tag defines an area inside an image map (an image map is an image with clickable areas). <area> elements are always nested inside a <map> tag.
+
+The coords attribute specifies the coordinates of an area in an image map. The coords attribute is used together with the shape attribute to specify the size, shape, and placement of an area.
+
+Value               	Description
+x1,y1,x2,y2          :	Specifies the coordinates of the top-left and bottom-right corner of the rectangle (shape="rect")
+
+x,y,radius	         :  Specifies the coordinates of the circle center and the radius (shape="circle")
+
+x1,y1,x2,y2,..,xn,yn :	Specifies the coordinates of the edges of the polygon. If the first and last coordinate pairs are not the same, the browser will add the last coordinate pair to close the polygon (shape="poly")
+
+-------------------------------------------------
+
+Que 19 :- What is picture tag and figure tag?
+The <picture> tag gives web developers more flexibility in specifying image resources. The most common use of the <picture> element will be for art direction in responsive designs. As the picture tag allows the inclusion of multiple sources inside it. It supports modern image formats like avif, and webp, which are highly responsive. Additional advantages for picture tags include the support for partially supported image formats and Chrome DevTools support.
+
+<source>: The Media or Image Source element. The <source> HTML element specifies one or more media resources for the <picture> , <audio> , and <video> elements. It is a void element, which means that it has no content and does not require a closing tag
+
+<picture>
+    <source srcset="/resources/img/wallpaper-_5_.webp">
+    <img src="/resources/img/wallpaper (5).jpg" width="200px">
+</picture>
+
+FIGURE TAG -> the figure html element represents self-containd content, potentially with an optional caption, which is specified using the <ficaption> elemtn.
+
+<figure> 
+    <img src="/resources/img/wallpaper (5).jpg" alt="iron man image" width="200px">
+    <figcaption>this is an ironman image</figcaption>
+</figure>
+
+-------------------------------------------------
+
+Que 20 :- What is list in html?
+HTML lists allow web developers to group a set of related items in lists. The Basics of HTML Lists. HTML lists come in three main categories: unordered lists, ordered lists, and definition lists. Each type serves a specific purpose and can be customized to fit your design and content needs.
+
+UNORDERED LIST
+Unordered lists are perfect for presenting items that do not have a particular sequence or order. They are typically displayed with bullet points, which make them visually distinct from ordered lists. An example might be a grocery shopping list. To create an unordered list, you can use the <ul> (unordered list) element and nest individual list items within <li> (list item) elements:
+we can customized default bulletpoint style by "type" attribute in ul tag. default is disc, we can make it circle, square, and none 
+    
+Unordered List (<ul>) Styles:
+Disc (list-style-type: disc;): Default style - filled circles.
+Circle (list-style-type: circle;): Hollow circles.
+Square (list-style-type: square;): Squares.
+None (list-style-type: none;): No bullet points.
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+ORDERED LIST
+Ordered lists, as the name suggests, are useful when you want to present items in a specific sequence or order. They are displayed with numbers orletters by default, but you can customize the numbering style using CSS. An example might be a ranked list of your favorite movies. To create anordered list, use the <ol> (ordered list) element and nest list items within <li> elements: 
+
+Ordered List (<ol>) Styles:
+
+Decimal (list-style-type: decimal;): Default style - decimal numbers.
+Lowercase Letters (list-style-type: lower-alpha;): Lowercase letters (a, b, c).
+Uppercase Letters (list-style-type: upper-alpha;): Uppercase letters (A, B, C).
+Lowercase Roman Numerals (list-style-type: lower-roman;): Lowercase Roman numerals (i, ii, iii).
+Uppercase Roman Numerals (list-style-type: upper-roman;): Uppercase Roman numerals (I, II, III) 
+
+The start attribute specifies the start value of the first list item in an ordered list. This value is always an integer, even when the numbering type is letters or romans. E.g., to start counting list items from the letter "c" or the roman number "iii", use start="3".
+
+
+<p>example of ordered list</p>
+<ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+
+DESCRIPTION LIST
+The <dl> HTML element represents a description list. The element encloses a list of groups of terms (specified using the <dt> element) and descriptions (provided by <dd> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs)
+
+
+<dl>
+    <dt>Beast of Bodmin</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Morgawr</dt>
+    <dd>A sea serpent.</dd>
+
+    <dt>Owlman</dt>
+    <dd>A giant owl-like creature.</dd>
+</dl>
+
+-------------------------------------------------
+
+Que 20 :- What is html tables?
+The <table> tag defines an HTML table. An HTML table consists of one <table> element and one or more <tr>, <th>, and <td> elements. The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -144,4 +274,6 @@ Que 17 :- What is anchor tag in HTML?
 -------------------------------------------------
 
 Que  :-
+
+
 

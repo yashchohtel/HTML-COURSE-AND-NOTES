@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <!-- All HTML documents must start with a <!DOCTYPE> declaration. The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect. In HTML 5, the declaration is simple: <!DOCTYPE html>. It appear once, at the top of the page. -->
 
@@ -146,7 +138,16 @@
     <!--? (IX) Small <small></small> 
     The <small> tag in HTML is used to define smaller text, reducing font size. It decreases the font size by one size (from medium to small, from x-large to large)
     -->
-    <p>This is <small>small</small> tag</p>  <hr>
+    <p>This is <small>small</small> tag</p>
+    
+    <!--? (X) By Direction tag <bdo dir=""></bdo> 
+        <bdo dir=""></bdo> this is bdo (by direction) tag used to define the direction of text and it has dir attribute in which we write direction-->
+        <p>bdo tag</p>
+    <bdo dir="ltr">this text is left to right</bdo>
+    <br>
+    <bdo dir="rtl">this text is right to left</bdo>
+    <hr>
+    <br>
 
     <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
 
@@ -154,10 +155,177 @@
     <h1>[4] ANCHOR TAG</h1>
 
     <!--? Anchor tags in HTML code are HTML elements used to create hyperlinks in webpages. They allow you to link to another webpage, a specific section of a page, an email address, a file, or any other URL. They are also known as anchor elements or <a> tags. Anchor tag has "href" attribute which means (Hypertext REFerece) it contains the url. -->
-    
-    
+
+
     <a href="https://google.com">GOOGLE</a>
 
+    <!--? HTML ANCHOR TAG - ATTRIBUTE -->
+
+    <!-- href: Specifies the URL or destination the link points to. -->
+
+    <!--? target: Specifies where the linked content will be displayed (e.g., _blank for a new window/tab).  --> <br>
+    <a href="https://google.com" target="_blank">GOOGLE link with target _blank</a> <br>
+
+    <!--* download: Suggests that the target will be downloaded when clicked.-->
+    <a href="/resources/img/wallpaper (5).jpg" title="download this image" download>download iron man image</a> <br>
+
+    <!--* rel: Describes the relationship between the current page and the linked page.  -->
+
+    <!--* title:Provides additional information when hovering over the link. -->
+    <a href="https://google.com" title="click to open google">hover to see</a> <br>
+
+    <!-- href:mailto: mailto is a Uniform Resource Identifier (URI) scheme for email addresses. It is used to produce hyperlinks on websites that allow users to send an email to a specific address directly from an HTML document, without having to copy it and entering it into an email client.  -->
+    <a href="mailto:yashchohtel@gmail.com">send email if you want</a> <br>
+
+    <!-- Href=tel: creates the call link. This tells the browser how to use the number. “Tel: 123-456-7890 “creates the HTML phone number. The number within the quotes is the number it will call. -->
+    <a href="tel:+910000000000">call me if you want</a>
+
+    <hr> <br>
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [6] IMAGE TAG AND ITS ATTRIBUTE -->
+    <h1>[6] IMAGE TAG IT'S ATTRIBUTE </h1>
+
+    <!--? The <img> tag is used to embed an image in an HTML page. Images are not technically inserted into a web page; imagesare linked to web pages. The <img> tag creates a holding space for the referenced image. src - Specifies the path to the image. alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed. <img src="link or image" alt="alternae text"> -->
+
+    <!--* IMAGES TAG ATTRIBUTE -->
+
+    <!-- a. src: -> Specifies the path to the image -->
+    <!-- b. atl: -> Specifies an alternate text for the image, if the image for some reason cannot be displayed -->
+    <!-- c. height and width: -> The height and width can be set in terms of pixels. The <img> height attribute is used to set the height of the image in pixels. The <img> width attribute is used to set the width of the image in pixels -->
+    <!-- d. loading: -> The loading attribute specifies whether a browser should load an image immediately or to defer loading of off-screen images until for example the user scrolls near them. -->
+
+    <img src="/resources/img/wallpaper (5).jpg" alt="iron man img" height="300" loading="lazy"> <br>
+    <p>normal image</p>
+
+    <img src="/resources/img/wallpaper (5).jpgd" alt="iron man img">
+    <p>image with alternate text</p>
+
+    <a href="https://en.wikipedia.org/wiki/Iron_Man" target="_blank"> <img src="/resources/img/wallpaper (5).jpg"
+            height="300px" alt="iron man img" title="click to view iron man wikipedia"> </a>
+    <p>image link</p> <br> <br>
+
+    <!--* USE MAP ATTRIBUTE -->
+
+    <!-- The <map> tag is used to define an image map. An image map is an image with clickable areas. The required name attribute of the <map> element is associated with the <img>'s usemap attribute and creates a relationship between the image and the map.
+
+    The <area> tag defines an area inside an image map (an image map is an image with clickable areas). <area> elements are always nested inside a <map> tag.
+
+    The coords attribute specifies the coordinates of an area in an image map. The coords attribute is used together with the shape attribute to specify the size, shape, and placement of an area. -->
+
+    <img src="/resources/img/wallpaper (5).jpg" alt="cliciable iron man image" width="200px" height="200px"
+        usemap="#ironmap">
+    <map name="ironmap"> <area shape="rect" coords="50,50,150,150" href="https://yashchohtel.com" target="_blank"
+            alt="Central Area" /></map>
+    <hr><br>
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [7] PICTURE TAG AND FIGURE TAG -->
+    <h1>[7] PICTURE TAG AND FIGURE TAG </h1>
+
+    <!--? The <picture> tag gives web developers more flexibility in specifying image resources. The most common use of the <picture> element will be for art direction in responsive designs. As the picture tag allows the inclusion of multiple sources inside it. It supports modern image formats like avif, and webp, which are highly responsive. Additional advantages for picture tags include the support for partially supported image formats and Chrome DevTools support. -->
+
+    <!-- <source>: The Media or Image Source element. The <source> HTML element specifies one or more media resources for the <picture> , <audio> , and <video> elements. It is a void element, which means that it has no content and does not require a closing tag. -->
+
+    <picture>
+        <source srcset="/resources/img/wallpaper-_5_.webp">
+        <img src="/resources/img/wallpaper (5).jpg" width="200px">
+    </picture>
+    <p>this is pictur ta with multiple image sources</p>
+
+    <!--* FIGURE TAG -->
+    <!-- the figure html element represents self-containd content, potentially with an optional caption, which is specified using the <ficaption> elemtn. -->
+
+    <figure>
+        <img src="/resources/img/wallpaper (5).jpg" alt="iron man image" width="200px">
+        <figcaption>this is an ironman image</figcaption>
+    </figure>
+    <hr><br>
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [8] LIST TAG -->
+    <h1>[8] LIST TAG </h1>
+
+    <!--? HTML lists allow web developers to group a set of related items in lists. The Basics of HTML Lists. HTML lists come in three main categories: unordered lists, ordered lists, and definition lists. Each type serves a specific purpose and can be customized to fit your design and content needs. -->
+
+    <!--* UNORDERED LIST -->
+    <!-- Unordered lists are perfect for presenting items that do not have a particular sequence or order. They are typically displayed with bullet points, which make them visually distinct from ordered lists. An example might be a grocery shopping list. To create an unordered list, you can use the <ul> (unordered list) element and nest individual list items within <li> (list item) elements: -->
+
+    <!-- we can customized default bulletpoint style by "type" attribute in ul tag. default is disc, we can make it circle, square, and none 
+    
+    Unordered List (<ul>) Styles:
+
+    Disc (list-style-type: disc;): Default style - filled circles.
+    Circle (list-style-type: circle;): Hollow circles.
+    Square (list-style-type: square;): Squares.
+    None (list-style-type: none;): No bullet points. -->
+
+    <p>example of order list</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!--* ORDERED LIST -->
+
+    <!-- Ordered lists, as the name suggests, are useful when you want to present items in a specific sequence or order. They are displayed with numbers or letters by default, but you can customize the numbering style using CSS. An example might be a ranked list of your favorite movies. To create an ordered list, use the <ol> (ordered list) element and nest list items within <li> elements: -->
+
+    <!-- Ordered List (<ol>) Styles:
+
+    Decimal (list-style-type: decimal;): Default style - decimal numbers.
+    Lowercase Letters (list-style-type: lower-alpha;): Lowercase letters (a, b, c).
+    Uppercase Letters (list-style-type: upper-alpha;): Uppercase letters (A, B, C).
+    Lowercase Roman Numerals (list-style-type: lower-roman;): Lowercase Roman numerals (i, ii, iii).
+    Uppercase Roman Numerals (list-style-type: upper-roman;): Uppercase Roman numerals (I, II, III)  -->
+
+    <!-- The start attribute specifies the start value of the first list item in an ordered list. This value is always an integer, even when the numbering type is letters or romans. E.g., to start counting list items from the letter "c" or the roman number "iii", use start="3". -->
+
+    <p>example of ordered list</p>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <!-- * DESCRIPTION LIST -->
+    <!-- The <dl> HTML element represents a description list. The element encloses a list of groups of terms (specified using the <dt> element) and descriptions (provided by <dd> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs). -->
+
+    <p>example of description list</p>
+    <dl>
+        <dt>Beast of Bodmin</dt>
+        <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+        <dt>Morgawr</dt>
+        <dd>A sea serpent.</dd>
+
+        <dt>Owlman</dt>
+        <dd>A giant owl-like creature.</dd>
+    </dl>
+
+
+    <!--* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ -->
+
+    <!--TODO [9] HTML TABLES -->
+    <h1>[9] HTML TABLES </h1>
+
+    <!--? HTML tables allow web developers to arrange data into rows and columns. We must write everyting inside the table tag. The <table> tag defines an HTML table. An HTML table consists of one <table> element and one or more <tr>, <th>, and <td> elements. The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell. -->
+
+    <!-- <table> : Defines an html tabele, which is used to organize data into rows and columns. -->
+    <!-- <thead> : Groups the header content (table headings ) of an HMTL tables -->
+    <!-- <tbody> : Groups the main content (data rows) of an HTML tables -->
+    <!-- <th>    : Defines a header cell (table heading) within a table -->
+    <!-- <td>    : Represents a data cell within an HTML table. -->
+    <!-- <tr>    : Defines a row within an html table. -->
+
+
+
+    <table>
+
+    </table>
 
 
 
@@ -166,6 +334,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <BR><BR><BR></BR></BR></BR>
 
 </body>
 
