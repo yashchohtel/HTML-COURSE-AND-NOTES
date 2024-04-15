@@ -120,6 +120,9 @@
 
 
 
+
+
+
 HISTORY OF HTML => Early Beginnings (1980's) The concept of hypertext was proposed by computer scientist Ted Nelson in the 1960s. In the 1980s,Berners-lee, a British computer scientist introduced the world wide web (www) and developed the first HTML.
 
 -------------------------------------------------
